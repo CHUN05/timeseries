@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570404232531.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2906570085",
+    "id" : "E6A4222C",
+    "lastKnownWriteTime" : 1570409504,
+    "last_content_update" : 1570409504804,
+    "path" : "~/Descargas/Mexico /TimesSeries/scriptBarja.R",
+    "project_path" : "scriptBarja.R",
+    "properties" : {
+        "cursorPosition" : "37,0",
+        "scrollLine" : "28",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
