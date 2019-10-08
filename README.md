@@ -1,2 +1,2 @@
 # timeseries
-plot for a friends of Mexico 
+plot for a friend of Mexico 
