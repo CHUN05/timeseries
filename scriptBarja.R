@@ -8,7 +8,7 @@ library(ggfortify)
 
 
 # Lectura de datos --------------------------------------------------------
-data <- read.csv('Data/data.csv')
+data <- read.csv('Data/5001.csv')
 
 # Acumulado anual ---------------------------------------------------------
 acumulado <- data
@@ -24,11 +24,12 @@ write_csv2(acumulado,'Data/newdata.csv')
 # Modelado  ---------------------------------------------------------------
 
 data <- data %>% melt(id.vars = "ano")
-data <- data$value %>% ts(start = c(1944,1), frequency = 12)
+newdata <- data[order(data$ano),]
+newdata <- newdata$value %>% ts(start = c(1944,1), frequency = 12) # Modifica el rango de star
 
 # Plot --------------------------------------------------------------------
-p  <- autoplot(data, colour = "blue") +
-  scale_x_continuous(breaks = seq(1944,1967, by = 1))
+p  <- autoplot(newdata, colour = "blue") +
+  scale_x_continuous(breaks = seq(1944,1969, by = 1)) # Modifica el rango de secuencia
 p2 <- p + labs(title ='TITULO',
                x = 'ejex',
                y = 'ejey',
